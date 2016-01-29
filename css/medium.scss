@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*The css reset is the Eric Meyer's Reset as talked about on page 18 in the book "Responsive Web Design" by Ethan Marcotte*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*General Styles*/
+
+body {background-color:#FFF;
+}
+
+#wrapper {margin:0 auto;	
+			width:100%; /* 1500px/1530px */
+
+}
+
+p, h1, h2, h3, h4, li{ font-family:"Hoefler Text";
+}
+
+h1 {font-size:1.625em; /* 26pt/16pt */
+		font-style:normal;
+		font-weight:bold;
+}
+
+h2 {font-size:1.25em; /* 20pt/16pt*/
+		font-style:normal;
+		font-weight:800;		
+}
+
+p {font-size:1.125em; /*18pt/16pt*/
+		font-style:normal;
+		font-weight:normal;
+}
+
+/*end of General Styles*/
+
+/*header Styles*/
+#header {background-color: #7E5B33;
+			padding-left: .0066666667%; /*10px/1500px*/
+			padding-right: .0066666667%; /*10px/1500px*/
+}
+			
+#logo img {width:20%;
+			max-width:100%;
+			margin-left:42.033235581623%; /*430px / 1023px*/
+			margin-right:42.033235581623%; /*430px / 1023px*/
+}			
+
+#logo {padding-bottom: 7%;
+}
+
+#header h1 { font-size: 2.5em; /* 40pt/16pt */
+				color:#FFF;
+				margin-top:-6%;
+				font-weight:600;
+				padding-bottom:5px;
+				text-align:center;
+				
+}
+
+#header h2 {display: none; 
+}
+/*end of header Styles*/
+
+/*time styles*/
+
+#time {display:none;
+}
+
+/*end of time styles*/
+
+/*large-nav Styles*/
+
+#large-nav {display: none;
+}
+
+/*end of large-nav Styles*/
+
+/*tab-nav styles*/
+#tab-nav {background-color: #AE956D;
+				padding-top: 7px;
+				padding-bottom: 7px;
+				margin-bottom:20px;
+}
+
+#tab-nav ul {list-style:none;
+				padding-left: 10%; /* 300px/1500px */
+				
+}
+
+#tab-nav li {display:inline;
+						font-size: 1.625em; /* 26pt/16pt */
+						color:#FFF;
+						padding-right:1.5%; /* 22.5px/1500px */
+						padding-left:1.5%; /* 22.5px/1500px */
+}
+
+.border {display:inline;
+			font-size:1.125em; /* 18pt/16pt */
+			color:#FFF;
+			border-right:solid;
+			border-width:thin;
+			border-color:#FFF;	
+}
+/*end of tab-nav styles*/
+			
+/* cakes Styles*/
+
+#cakes {background-color: #EFE0B9;
+			margin-left: 5.865102639296%; /* 60px/1023px */
+			margin-right: 5.865102639296%; /* 60px/1023px */
+			padding:1.33333333333%; /* 20px/1500px */
+			margin-bottom: 20px;
+			
+}
+
+#cakes h1 {text-align:center;
+			margin-bottom:3%;
+}
+
+#cake-pic {padding-bottom: 20%;
+}
+
+#cake-pic img { width:35%; /* 945px/1500px */
+				max-width:100%;
+				margin-left: 31%; /* 306.9px/1023px */
+				margin-right: 23%; /* 235.29px/1023px */
+				padding-right: 1%; /* 15px/1500px */
+				padding-bottom: 1%; 
+}
+ .top-p {margin-top: -20%;
+}
+ 
+ .bottom-p {margin-bottom: 1%;
+}
+ 
+#cakes p {line-height: 120%;
+			padding-bottom:2%;
+}
+
+/* end of cakes Styles*/
+
+/* deals Styles*/
+	#deals {background-color:#EFE0B9;
+				margin-left: 5.865102639296%; /* 60px/1023px */
+				margin-right: 5.865102639296%; /* 60px/1023px */
+				margin-bottom:20px;
+				padding-left: 4.887585532747%; /* 50px/1023px */
+				padding-right: 4.887585532747%; /* 50px/1023px */
+				padding-top: 1.333333333333%; /* 20px/1500px */
+				padding-bottom:.5%;
+}
+
+	#deals h1 {text-align:center;
+				padding-bottom:2%;
+}
+
+	#deals p {line-height: 120%;
+			padding-bottom:3%;
+			padding-top:3%;
+}
+
+	.border-deals { border-bottom:solid;
+			border-width:thin;
+			border-color:#000;								
+}
+/* end of deals Styles*/
+
+/* small-nav styles*/
+
+#small-nav {display:none;
+}
+
+/*end for small-nav styles*/ 
+
+/* footer Styles*/
+	#footer {clear:both;
+				background-color: #7E5B33;
+				
+}
+
+	#footer p {color:#FFF;
+				padding-top:1%; 
+				margin-left: 2%; /* 30px/1500px */
+				text-align:center;
+				line-height: 120%;
+				font-size:1.125em; /* 18pt/16pt*/
+}
+/* end of footer Styles*/
+
+/*sprites styles*/
+
+#SM-buttons { margin-left: 39.10068261975%; /* 400px/1023px */ 
+				padding-top: 10px;
+				padding-bottom:10px; 
+}
+
+.ul-sprits {list-style:none;
+		display:inline;
+}
+
+.fb-act, .tw-act, .pin-act { background:url(../images/GH-sprints.png) no-repeat;
+										
+}
+
+
+.fb-act { background-position: -30px -70px;
+			width:80px;
+			height:80px;
+			margin:2px;
+			display:inline-block;
+			
+}
+
+.tw-act { background-position: -30px -185px;
+			width:80px;
+			height:80px;
+			margin:2px;
+			display:inline-block;
+				
+}
+
+.pin-act { background-position: -30px -320px;
+			width:80px;
+			height:80px;
+			margin:2px;
+			display:inline-block;
+			
+}
+
+/* end of sprites sytles*/
+
