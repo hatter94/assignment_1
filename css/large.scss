@@ -1,3 +1,13 @@
+//Variables
+$background-color: #FFF;
+$bookend-color: #7E5B33;
+$nav-color: #AE956D;
+$nav-boarder-color: #FFF;
+$box-color:#EFE0B9;
+$deal-broader-color:#000;
+$text-color:#FFF;
+
+//Base CSS
 /* CSS Document */
 
 /*The css reset is the Eric Meyer's Reset as talked about on page 18 in the book "Responsive Web Design" by Ethan Marcotte*/
@@ -25,7 +35,7 @@ time, mark, audio, video {
 
 /*General Styles*/
 
-body {background-color:#FFF;
+body {background-color: $background-color;
 }
 
 #wrapper {margin:0 auto;	
@@ -54,7 +64,7 @@ p {font-size:1em; /*16pt/16pt*/
 /*end of General Styles*/
 
 /*header Styles*/
-#header {background-color: #7E5B33;
+#header {background-color: $bookend-color;
 			padding-left: .0066666667%; /*10px/1500px*/
 			padding-right: .0066666667%; /*10px/1500px*/
 }
@@ -68,14 +78,14 @@ p {font-size:1em; /*16pt/16pt*/
 }
 
 #header h1 { font-size: 2.5em; /* 40pt/16pt */
-				color:#FFF;
+				color:$text-color;
 				margin-top:-6%;
 				font-weight:600;
 				margin-bottom: 5px;
 }
 
 #header h2 {font-size: 1.5625em; /* 25pt/16pt */
-				color: #FFF;
+				color:$text-color;
 				font-style:italic;
 				font-weight:200;
 				margin-left: 17%; /* 255px/1500px */
@@ -92,7 +102,7 @@ p {font-size:1em; /*16pt/16pt*/
 
 /*large-nav Styles*/
 
-#large-nav {background-color: #AE956D;
+#large-nav {background-color:$nav-color;
 				padding-top: 5px;
 				padding-bottom: 5px;
 				margin-bottom:20px;
@@ -105,17 +115,17 @@ p {font-size:1em; /*16pt/16pt*/
 
 #large-nav li {display:inline;
 						font-size: 1.125em; /* 18pt/16pt */
-						color:#FFF;
+						color:$text-color;
 						padding-right:1.5%; /* 22.5px/1500px */
 						padding-left:1.5%; /* 22.5px/1500px */
 }
 
 .border {display:inline;
 			font-size:1.125em; /* 18pt/16pt */
-			color:#FFF;
+			color:$nav-boarder-color;
 			border-right:solid;
 			border-width:thin;
-			border-color:#FFF;								
+			border-color:$nav-boarder-color;								
 }
 
 /*end of large-nav Styles*/
@@ -129,7 +139,7 @@ p {font-size:1em; /*16pt/16pt*/
 
 /* cakes Styles*/
 
-#cakes {background-color: #EFE0B9;
+#cakes {background-color: $box-color;
 			margin-left: 2.66666666667%; /* 40px/1500px */
 			padding:1.33333333333%; /* 20px/1500px */
 			width:60.333333333333%; /* 902px/1500px */
@@ -164,7 +174,7 @@ p {font-size:1em; /*16pt/16pt*/
 
 /* deals Styles*/
 	#deals {float:right;
-				background-color:#EFE0B9;
+				background-color: $box-color;
 				width:21.7%; /* 325.5px/1500px */
 				margin-right: 2%; /* 30px/1500px */
 				padding-left: 1.333333333333%; /* 20px/1500px */
@@ -184,7 +194,7 @@ p {font-size:1em; /*16pt/16pt*/
 
 	.border-deals { border-bottom:solid;
 			border-width:thin;
-			border-color:#000;								
+			border-color:$deal-broader-color;								
 }
 /* end of deals Styles*/
 
@@ -197,12 +207,12 @@ p {font-size:1em; /*16pt/16pt*/
 
 /* footer Styles*/
 	#footer {clear:both;
-				background-color: #7E5B33;
+				background-color: $bookend-color;
 				margin-top:62%;
 				
 }
 
-	#footer p {color:#FFF;
+	#footer p {color:$text-color;
 				padding-top:1%; 
 				margin-left: 2%; /* 30px/1500px */
 				text-align:center;
