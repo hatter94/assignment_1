@@ -150,7 +150,7 @@ h2 {font-size: 1.5625em; /* 25pt/16pt */
 #cakes {background-color: $box-color;
 			margin-left: 2.66666666667%; /* 40px/1500px */
 			padding:1.33333333333%; /* 20px/1500px */
-			width:percentage($cakes-size/$window-size); /* 902px/1500px */
+			width:percentage($cakes-size/$window-size); /* 902px/1500px */ //math Sass functions used
 			float:left;
 
 p {line-height: 120%;
@@ -184,7 +184,7 @@ img { float:left;
 /* deals Styles*/
 	#deals {float:right;
 				background-color: $box-color;
-				width:percentage($deals-size/$window-size); /* 325.5px/1500px */
+				width:percentage($deals-size/$window-size); /* 325.5px/1500px */ //math Sass functions used
 				margin-right: 2%; /* 30px/1500px */
 				padding-left: 1.333333333333%; /* 20px/1500px */
 				padding-right: 1.333333333333%; /* 20px/1500px */

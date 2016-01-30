@@ -1,3 +1,14 @@
+//Variables
+$background-color: #FFF;
+$bookend-color:lighten(#7E5B33, 15%);
+$nav-color:saturate(#AE956D, 30%);
+$nav-boarder-color: #FFF;
+$box-color:darken(#EFE0B9, 20%);
+$deal-broader-color:#000;
+$text-color:#FFF;
+$font-family: "Hoefler Text";
+
+//Base CSS
 @charset "UTF-8";
 /* CSS Document */
 
@@ -26,7 +37,7 @@ time, mark, audio, video {
 
 /*General Styles*/
 
-body {background-color:#FFF;
+body {background-color:$background-color;
 }
 
 #wrapper {margin:0 auto;	
@@ -34,7 +45,7 @@ body {background-color:#FFF;
 
 }
 
-p, h1, h2, h3, h4, li{ font-family:"Hoefler Text";
+p, h1, h2, h3, h4, li{ font-family:$font-family;
 }
 
 h1 {font-size:1.625em; /* 26pt/16pt */
@@ -55,22 +66,22 @@ p {font-size:1.125em; /*18pt/16pt*/
 /*end of General Styles*/
 
 /*header Styles*/
-#header {background-color: #7E5B33;
-			padding-left: .0066666667%; /*10px/1500px*/
-			padding-right: .0066666667%; /*10px/1500px*/
-}
 			
-#logo img {width:20%;
+#logo {padding-bottom: 7%;
+    
+img {width:20%;
 			max-width:100%;
 			margin-left:42.033235581623%; /*430px / 1023px*/
 			margin-right:42.033235581623%; /*430px / 1023px*/
-}			
+    }
+} //nested
 
-#logo {padding-bottom: 7%;
-}
+#header {background-color: $bookend-color;
+			padding-left: .0066666667%; /*10px/1500px*/
+			padding-right: .0066666667%; /*10px/1500px*/
 
-#header h1 { font-size: 2.5em; /* 40pt/16pt */
-				color:#FFF;
+h1 { font-size: 2.5em; /* 40pt/16pt */
+				color:$text-color;
 				margin-top:-6%;
 				font-weight:600;
 				padding-bottom:5px;
@@ -78,8 +89,9 @@ p {font-size:1.125em; /*18pt/16pt*/
 				
 }
 
-#header h2 {display: none; 
-}
+h2 {display: none; 
+    }
+} //nested
 /*end of header Styles*/
 
 /*time styles*/
@@ -97,56 +109,59 @@ p {font-size:1.125em; /*18pt/16pt*/
 /*end of large-nav Styles*/
 
 /*tab-nav styles*/
-#tab-nav {background-color: #AE956D;
+#tab-nav {background-color: $nav-color;
 				padding-top: 7px;
 				padding-bottom: 7px;
 				margin-bottom:20px;
-}
 
-#tab-nav ul {list-style:none;
+
+ul {list-style:none;
 				padding-left: 10%; /* 300px/1500px */
 				
 }
 
-#tab-nav li {display:inline;
+li {display:inline;
 						font-size: 1.625em; /* 26pt/16pt */
-						color:#FFF;
+						color:$text-color;
 						padding-right:1.5%; /* 22.5px/1500px */
 						padding-left:1.5%; /* 22.5px/1500px */
-}
+    }
+} //nested
 
 .border {display:inline;
 			font-size:1.125em; /* 18pt/16pt */
-			color:#FFF;
+			color:$nav-boarder-color;
 			border-right:solid;
 			border-width:thin;
-			border-color:#FFF;	
+			border-color:$nav-boarder-color;	
 }
 /*end of tab-nav styles*/
 			
 /* cakes Styles*/
 
-#cakes {background-color: #EFE0B9;
+#cakes {background-color: $box-color;
 			margin-left: 5.865102639296%; /* 60px/1023px */
 			margin-right: 5.865102639296%; /* 60px/1023px */
 			padding:1.33333333333%; /* 20px/1500px */
 			margin-bottom: 20px;
-			
-}
 
-#cakes h1 {text-align:center;
+h1 {text-align:center;
 			margin-bottom:3%;
+}
+p {line-height: 120%;
+			padding-bottom:2%;
+    }
 }
 
 #cake-pic {padding-bottom: 20%;
-}
 
-#cake-pic img { width:35%; /* 945px/1500px */
+img { width:35%; /* 945px/1500px */
 				max-width:100%;
 				margin-left: 31%; /* 306.9px/1023px */
 				margin-right: 23%; /* 235.29px/1023px */
 				padding-right: 1%; /* 15px/1500px */
 				padding-bottom: 1%; 
+    }
 }
  .top-p {margin-top: -20%;
 }
@@ -154,14 +169,11 @@ p {font-size:1.125em; /*18pt/16pt*/
  .bottom-p {margin-bottom: 1%;
 }
  
-#cakes p {line-height: 120%;
-			padding-bottom:2%;
-}
 
 /* end of cakes Styles*/
 
 /* deals Styles*/
-	#deals {background-color:#EFE0B9;
+	#deals {background-color:$box-color;
 				margin-left: 5.865102639296%; /* 60px/1023px */
 				margin-right: 5.865102639296%; /* 60px/1023px */
 				margin-bottom:20px;
@@ -169,20 +181,21 @@ p {font-size:1.125em; /*18pt/16pt*/
 				padding-right: 4.887585532747%; /* 50px/1023px */
 				padding-top: 1.333333333333%; /* 20px/1500px */
 				padding-bottom:.5%;
-}
 
-	#deals h1 {text-align:center;
+
+h1 {text-align:center;
 				padding-bottom:2%;
 }
 
-	#deals p {line-height: 120%;
+p {line-height: 120%;
 			padding-bottom:3%;
 			padding-top:3%;
+    }
 }
 
 	.border-deals { border-bottom:solid;
 			border-width:thin;
-			border-color:#000;								
+			border-color:$deal-broader-color;								
 }
 /* end of deals Styles*/
 
@@ -195,16 +208,17 @@ p {font-size:1.125em; /*18pt/16pt*/
 
 /* footer Styles*/
 	#footer {clear:both;
-				background-color: #7E5B33;
+				background-color: $bookend-color;
 				
-}
 
-	#footer p {color:#FFF;
+
+p {color:#FFF;
 				padding-top:1%; 
 				margin-left: 2%; /* 30px/1500px */
 				text-align:center;
 				line-height: 120%;
 				font-size:1.125em; /* 18pt/16pt*/
+        }
 }
 /* end of footer Styles*/
 
@@ -219,12 +233,8 @@ p {font-size:1.125em; /*18pt/16pt*/
 		display:inline;
 }
 
-.fb-act, .tw-act, .pin-act { background:url(../images/GH-sprints.png) no-repeat;
-										
-}
-
-
-.fb-act { background-position: -30px -70px;
+.fb-act { background:url(../images/GH-sprints.png) no-repeat;
+            background-position: -30px -70px;
 			width:80px;
 			height:80px;
 			margin:2px;
@@ -232,7 +242,9 @@ p {font-size:1.125em; /*18pt/16pt*/
 			
 }
 
-.tw-act { background-position: -30px -185px;
+//@extend used
+.tw-act {@extend .fb-act;
+            background-position: -30px -185px;
 			width:80px;
 			height:80px;
 			margin:2px;
@@ -240,7 +252,9 @@ p {font-size:1.125em; /*18pt/16pt*/
 				
 }
 
-.pin-act { background-position: -30px -320px;
+//@extend used
+.pin-act { @extend .fb-act;
+            background-position: -30px -320px;
 			width:80px;
 			height:80px;
 			margin:2px;
