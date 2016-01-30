@@ -7,7 +7,9 @@ $box-color:darken(#EFE0B9, 20%);
 $deal-broader-color:#000;
 $text-color:#FFF;
 $font-family: "Hoefler Text";
-
+$window-size:1500;
+$deals-size:325.5;
+$cakes-size:902;
 //Base CSS
 /* CSS Document */
 
@@ -148,7 +150,7 @@ h2 {font-size: 1.5625em; /* 25pt/16pt */
 #cakes {background-color: $box-color;
 			margin-left: 2.66666666667%; /* 40px/1500px */
 			padding:1.33333333333%; /* 20px/1500px */
-			width:60.333333333333%; /* 902px/1500px */
+			width:percentage($cakes-size/$window-size); /* 902px/1500px */
 			float:left;
 
 p {line-height: 120%;
@@ -182,7 +184,7 @@ img { float:left;
 /* deals Styles*/
 	#deals {float:right;
 				background-color: $box-color;
-				width:21.7%; /* 325.5px/1500px */
+				width:percentage($deals-size/$window-size); /* 325.5px/1500px */
 				margin-right: 2%; /* 30px/1500px */
 				padding-left: 1.333333333333%; /* 20px/1500px */
 				padding-right: 1.333333333333%; /* 20px/1500px */
@@ -270,6 +272,8 @@ p {line-height: 120%;
 			display:inline-block;
 			
 }
+
+//Mixin used
 
 @mixin hover ($left:-155px, $right:-68px){
     background-position: $left $right;
