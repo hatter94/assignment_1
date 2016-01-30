@@ -1,3 +1,14 @@
+//Variables
+$background-color: #FFF;
+$bookend-color:lighten(#7E5B33, 15%);
+$nav-color:saturate(#AE956D, 30%);
+$nav-boarder-color: #FFF;
+$box-color:darken(#EFE0B9, 20%);
+$deal-broader-color:#000;
+$text-color:#FFF;
+$font-family: "Hoefler Text";
+
+//Base CSS
 /* CSS Document */
 
 /*The css reset is the Eric Meyer's Reset as talked about on page 18 in the book "Responsive Web Design" by Ethan Marcotte*/
@@ -25,7 +36,7 @@ time, mark, audio, video {
 
 /*General Styles*/
 
-body {background-color:#FFF;
+body {background-color:$background-color;
 }
 
 #wrapper {margin:0 auto;	
@@ -33,7 +44,7 @@ body {background-color:#FFF;
 
 }
 
-p, h1, h2, h3, h4, li{ font-family:"Hoefler Text";
+p, h1, h2, h3, h4, li{ font-family:$font-family;
 }
 
 h1 {font-size:1.5em; /* 24pt/16pt */
@@ -54,16 +65,17 @@ p {font-size:1em; /*16pt/16pt*/
 /*end of General Styles*/
 
 /*header Styles*/
-#header {background-color: #7E5B33;
-			padding-left: .0066666667%; /*10px/1500px*/
-			padding-right: .0066666667%; /*10px/1500px*/
-}
+
 
 #logo {display:none;
 }
 
-#header h1 { font-size: 1.875em; /* 30pt/16pt */
-				color:#FFF;
+#header {background-color: $bookend-color;
+			padding-left: .0066666667%; /*10px/1500px*/
+			padding-right: .0066666667%; /*10px/1500px*/
+
+ h1 { font-size: 1.875em; /* 30pt/16pt */
+				color:$text-color;
 				text-align:center;
 				font-weight:600;
 				margin-bottom:15px;
@@ -71,25 +83,27 @@ p {font-size:1em; /*16pt/16pt*/
 				padding-bottom:5px;
 }
 
-#header h2 {display: none;
-}
+ h2 {display: none;
+    }
+} //nested  
 /*end of header Styles*/						
 
 /*time styles*/
 
-#time {background-color: #EFE0B9;
+#time {background-color: $box-color;
 		margin-left: 2.66666666667%; /* 40px/1500px */
 		margin-right: 2.66666666667%; /* 40px/1500px */
 		margin-bottom: 15px;
 		text-align:center;
 		padding-top:10px;
 		padding-bottom:15px;
-}
 
-#time p {line-height:130%;
+
+p {line-height:130%;
 			font-size:1.25em; /* 20pt/16pt*/
 			font-weight:600;
-}
+    }
+} //nested
 
 /*end of time styles*/
 
@@ -109,7 +123,7 @@ p {font-size:1em; /*16pt/16pt*/
 
 /* cakes Styles*/
 
-#cakes {background-color: #EFE0B9;
+#cakes {background-color: $box-color;
 			margin-left: 2.66666666667%; /* 40px/1500px */
 			margin-right: 2.66666666667%; /* 40px/1500px */
 			padding:1.33333333333%; /* 20px/1500px */
@@ -117,12 +131,19 @@ p {font-size:1em; /*16pt/16pt*/
 			text-align:center;
 			font-size:1.0625em; /* 17pt/16pt*/
 
-}
 
-#cakes h1 {text-align:center;
+
+h1 {text-align:center;
 			margin-bottom:3%;
 			padding-top:10px;
 }
+
+ p {line-height: 120%;
+			padding-bottom:2%;
+			padding-right:1.666666666667%; /*25px/1500px*/
+			padding-left:1.666666666667%; /*25px/1500px*/
+    }
+} //nested
 
 #cake-pic {display:none
 }
@@ -130,16 +151,10 @@ p {font-size:1em; /*16pt/16pt*/
  .bottom-p {margin-bottom: 1%;
 }
  
-#cakes p {line-height: 120%;
-			padding-bottom:2%;
-			padding-right:1.666666666667%; /*25px/1500px*/
-			padding-left:1.666666666667%%; /*25px/1500px*/
-}
-
 /* end of cakes Styles*/
 
 /* deals Styles*/
-	#deals {background-color:#EFE0B9;
+	#deals {background-color:$box-color;
 				margin-left: 2.66666666667%; /* 40px/1500px */
 				margin-right: 2.66666666667%; /* 40px/1500px */
 				padding-top: 10px;
@@ -147,19 +162,20 @@ p {font-size:1em; /*16pt/16pt*/
 				padding-left: 1.333333333333%; /* 20px/1500px */
 				padding-right: 1.333333333333%; /* 20px/1500px */
 				text-align:center;
-}
 
-	#deals h1 {text-align:center;
+
+h1 {text-align:center;
 				padding-bottom:2%;
 				padding-top:10px;
 }
 
-	#deals p {line-height: 120%;
+p {line-height: 120%;
 				font-size:1.0625em; /* 17pt/16pt*/
 				padding-bottom:3%;
 				padding-top:3%;
 				padding-right:1.666666666667%; /*25px/1500px*/
-				padding-left:1.666666666667%%; /*25px/1500px*/
+				padding-left:1.666666666667%; /*25px/1500px*/
+        }
 }
 
 	.border-deals { border-bottom:solid;
@@ -176,36 +192,35 @@ p {font-size:1em; /*16pt/16pt*/
 				margin-right: 2.66666666667%; /* 40px/1500px */
 				padding-top: 10px;
 				padding-bottom:15px;
-}
 
-#small-nav li {background-color: #AE956D;
+li {background-color: $nav-color;
 				text-align:center;
-				color:#FFF;
+				color:$text-color;
 				font-size:1.25em; /* 20pt/16pt*/
 				font-weight:600;
 				padding-top:10px;
 				padding-bottom: 10px;
 				margin-top: 10px;
 				
-}
+    }
+} //nested
 
 /*end for small-nav styles*/ 
 
 /* footer Styles*/
 	#footer {clear:both;
-				background-color: #7E5B33;
-				
-				
-}
+				background-color: $bookend-color;
 
-	#footer p {color:#FFF;
+p {color:$text-color;
 				padding-top:1%; 
 				margin-left: 2%; /* 30px/1500px */
 				margin-right: 2%;/* 30px/1500px */
 				text-align:center;
 				line-height: 120%;
 				font-size:1.125em; /* 18pt/16pt*/
-}
+        }
+}//nested
+
 /* end of footer Styles*/
 
 /*sprites styles*/
@@ -219,12 +234,8 @@ p {font-size:1em; /*16pt/16pt*/
 		display:inline;
 }
 
-.fb-act, .tw-act, .pin-act { background:url(../images/GH-sprints.png) no-repeat;
-										
-}
-
-
-.fb-act { background-position: -30px -70px;
+.fb-act { background:url(../images/GH-sprints.png) no-repeat;
+            background-position: -30px -70px;
 			width:80px;
 			height:80px;
 			margin:2px;
@@ -232,7 +243,9 @@ p {font-size:1em; /*16pt/16pt*/
 			
 }
 
-.tw-act { background-position: -30px -185px;
+//@extend used
+.tw-act {@extend .fb-act;
+            background-position: -30px -185px;
 			width:80px;
 			height:80px;
 			margin:2px;
@@ -240,7 +253,9 @@ p {font-size:1em; /*16pt/16pt*/
 				
 }
 
-.pin-act { background-position: -30px -320px;
+//@extend used
+.pin-act { @extend .fb-act;
+            background-position: -30px -320px;
 			width:80px;
 			height:80px;
 			margin:2px;
