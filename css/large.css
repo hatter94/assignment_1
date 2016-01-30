@@ -52,38 +52,35 @@ p {
 
 /*end of General Styles*/
 /*header Styles*/
+#logo {
+  padding-bottom: 12%; }
+  #logo img {
+    float: left;
+    width: 12%;
+    max-width: 100%; }
+
 #header {
-  background-color: #7E5B33;
+  background-color: #b48249;
   padding-left: .0066666667%;
   /*10px/1500px*/
   padding-right: .0066666667%;
   /*10px/1500px*/ }
-
-#logo img {
-  float: left;
-  width: 12%;
-  max-width: 100%; }
-
-#logo {
-  padding-bottom: 12%; }
-
-#header h1 {
-  font-size: 2.5em;
-  /* 40pt/16pt */
-  color: #FFF;
-  margin-top: -6%;
-  font-weight: 600;
-  margin-bottom: 5px; }
-
-#header h2 {
-  font-size: 1.5625em;
-  /* 25pt/16pt */
-  color: #FFF;
-  font-style: italic;
-  font-weight: 200;
-  margin-left: 17%;
-  /* 255px/1500px */
-  padding-bottom: 3%; }
+  #header h1 {
+    font-size: 2.5em;
+    /* 40pt/16pt */
+    color: #FFF;
+    margin-top: -6%;
+    font-weight: 600;
+    margin-bottom: 5px; }
+  #header h2 {
+    font-size: 1.5625em;
+    /* 25pt/16pt */
+    color: #FFF;
+    font-style: italic;
+    font-weight: 200;
+    margin-left: 17%;
+    /* 255px/1500px */
+    padding-bottom: 3%; }
 
 /*end of header Styles*/
 /*time styles*/
@@ -93,25 +90,23 @@ p {
 /*end of time styles*/
 /*large-nav Styles*/
 #large-nav {
-  background-color: #AE956D;
+  background-color: #d09d4b;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 20px; }
-
-#large-nav ul {
-  list-style: none;
-  padding-left: 4%;
-  /* 300px/1500px */ }
-
-#large-nav li {
-  display: inline;
-  font-size: 1.125em;
-  /* 18pt/16pt */
-  color: #FFF;
-  padding-right: 1.5%;
-  /* 22.5px/1500px */
-  padding-left: 1.5%;
-  /* 22.5px/1500px */ }
+  #large-nav ul {
+    list-style: none;
+    padding-left: 4%;
+    /* 300px/1500px */ }
+  #large-nav li {
+    display: inline;
+    font-size: 1.125em;
+    /* 18pt/16pt */
+    color: #FFF;
+    padding-right: 1.5%;
+    /* 22.5px/1500px */
+    padding-left: 1.5%;
+    /* 22.5px/1500px */ }
 
 .border {
   display: inline;
@@ -130,7 +125,7 @@ p {
 /*end of tab-nav Styles*/
 /* cakes Styles*/
 #cakes {
-  background-color: #EFE0B9;
+  background-color: #dcbb66;
   margin-left: 2.66666666667%;
   /* 40px/1500px */
   padding: 1.33333333333%;
@@ -138,22 +133,23 @@ p {
   width: 60.333333333333%;
   /* 902px/1500px */
   float: left; }
-
-#cakes h1 {
-  text-align: center;
-  margin-bottom: 3%; }
+  #cakes p {
+    line-height: 120%;
+    padding-bottom: 2%; }
+  #cakes h1 {
+    text-align: center;
+    margin-bottom: 3%; }
 
 #cake-pic {
   padding-bottom: 20%; }
-
-#cake-pic img {
-  float: left;
-  width: 50%;
-  /* 945px/1500px */
-  max-width: 100%;
-  padding-right: 1%;
-  /* 15px/1500px */
-  padding-bottom: 1%; }
+  #cake-pic img {
+    float: left;
+    width: 50%;
+    /* 945px/1500px */
+    max-width: 100%;
+    padding-right: 1%;
+    /* 15px/1500px */
+    padding-bottom: 1%; }
 
 .top-p {
   margin-top: -20%; }
@@ -161,15 +157,11 @@ p {
 .bottom-p {
   margin-bottom: 1%; }
 
-#cakes p {
-  line-height: 120%;
-  padding-bottom: 2%; }
-
 /* end of cakes Styles*/
 /* deals Styles*/
 #deals {
   float: right;
-  background-color: #EFE0B9;
+  background-color: #dcbb66;
   width: 21.7%;
   /* 325.5px/1500px */
   margin-right: 2%;
@@ -181,15 +173,13 @@ p {
   padding-top: 1.333333333333%;
   /* 20px/1500px */
   padding-bottom: .5%; }
-
-#deals h1 {
-  text-align: center;
-  padding-bottom: 2%; }
-
-#deals p {
-  line-height: 120%;
-  padding-bottom: 3%;
-  padding-top: 3%; }
+  #deals h1 {
+    text-align: center;
+    padding-bottom: 2%; }
+  #deals p {
+    line-height: 120%;
+    padding-bottom: 3%;
+    padding-top: 3%; }
 
 .border-deals {
   border-bottom: solid;
@@ -205,18 +195,17 @@ p {
 /* footer Styles*/
 #footer {
   clear: both;
-  background-color: #7E5B33;
+  background-color: #b48249;
   margin-top: 62%; }
-
-#footer p {
-  color: #FFF;
-  padding-top: 1%;
-  margin-left: 2%;
-  /* 30px/1500px */
-  text-align: center;
-  line-height: 120%;
-  font-size: 1.125em;
-  /* 18pt/16pt*/ }
+  #footer p {
+    color: #FFF;
+    padding-top: 1%;
+    margin-left: 2%;
+    /* 30px/1500px */
+    text-align: center;
+    line-height: 120%;
+    font-size: 1.125em;
+    /* 18pt/16pt*/ }
 
 /* end of footer Styles*/
 /*sprites styles*/
@@ -231,9 +220,7 @@ p {
   display: inline; }
 
 .fb-act, .tw-act, .pin-act {
-  background: url(../images/GH-sprints.png) no-repeat; }
-
-.fb-act {
+  background: url(../images/GH-sprints.png) no-repeat;
   background-position: -30px -70px;
   width: 80px;
   height: 80px;
@@ -254,7 +241,7 @@ p {
   margin: 2px;
   display: inline-block; }
 
-.fb-act:hover {
+.fb-act:hover, .tw-act:hover, .pin-act:hover {
   background-position: -155px -68px;
   width: 80px;
   height: 80px;

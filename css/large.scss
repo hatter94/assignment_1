@@ -1,11 +1,12 @@
 //Variables
 $background-color: #FFF;
-$bookend-color: #7E5B33;
-$nav-color: #AE956D;
+$bookend-color:lighten(#7E5B33, 15%);
+$nav-color:saturate(#AE956D, 30%);
 $nav-boarder-color: #FFF;
-$box-color:#EFE0B9;
+$box-color:darken(#EFE0B9, 20%);
 $deal-broader-color:#000;
 $text-color:#FFF;
+$font-family: "Hoefler Text";
 
 //Base CSS
 /* CSS Document */
@@ -43,7 +44,7 @@ body {background-color: $background-color;
 
 }
 
-p, h1, h2, h3, h4, li{ font-family:"Hoefler Text";
+p, h1, h2, h3, h4, li{ font-family:$font-family;
 }
 
 h1 {font-size:1.5em; /* 24pt/16pt */
@@ -64,32 +65,36 @@ p {font-size:1em; /*16pt/16pt*/
 /*end of General Styles*/
 
 /*header Styles*/
+
+#logo {padding-bottom: 12%;
+
+
+img {float:left;
+			width:12%;
+			max-width:100%;
+    }
+    
+}    
+
 #header {background-color: $bookend-color;
 			padding-left: .0066666667%; /*10px/1500px*/
 			padding-right: .0066666667%; /*10px/1500px*/
-}
-			
-#logo img {float:left;
-			width:12%;
-			max-width:100%;
-}			
 
-#logo {padding-bottom: 12%;
-}
-
-#header h1 { font-size: 2.5em; /* 40pt/16pt */
+h1 { font-size: 2.5em; /* 40pt/16pt */
 				color:$text-color;
 				margin-top:-6%;
 				font-weight:600;
 				margin-bottom: 5px;
 }
 
-#header h2 {font-size: 1.5625em; /* 25pt/16pt */
+h2 {font-size: 1.5625em; /* 25pt/16pt */
 				color:$text-color;
 				font-style:italic;
 				font-weight:200;
 				margin-left: 17%; /* 255px/1500px */
 				padding-bottom:3%;
+    }
+    
 }
 /*end of header Styles*/
 
@@ -106,27 +111,28 @@ p {font-size:1em; /*16pt/16pt*/
 				padding-top: 5px;
 				padding-bottom: 5px;
 				margin-bottom:20px;
-}
 
-#large-nav ul {list-style:none;
+ ul {list-style:none;
 				padding-left: 4%; /* 300px/1500px */
 				
 }
 
-#large-nav li {display:inline;
+ li {display:inline;
 						font-size: 1.125em; /* 18pt/16pt */
 						color:$text-color;
 						padding-right:1.5%; /* 22.5px/1500px */
 						padding-left:1.5%; /* 22.5px/1500px */
-}
-
-.border {display:inline;
+    }  
+}    
+    .border {
+            display:inline;
 			font-size:1.125em; /* 18pt/16pt */
 			color:$nav-boarder-color;
 			border-right:solid;
 			border-width:thin;
 			border-color:$nav-boarder-color;								
-}
+        }
+
 
 /*end of large-nav Styles*/
 
@@ -145,31 +151,32 @@ p {font-size:1em; /*16pt/16pt*/
 			width:60.333333333333%; /* 902px/1500px */
 			float:left;
 
+p {line-height: 120%;
+			padding-bottom:2%;
 }
 
-#cakes h1 {text-align:center;
+
+ h1 {text-align:center;
 			margin-bottom:3%;
+    }
 }
 
 #cake-pic {padding-bottom: 20%;
-}
 
-#cake-pic img { float:left;
+
+img { float:left;
 				width:50%; /* 945px/1500px */
 				max-width:100%;
 				padding-right: 1%; /* 15px/1500px */
 				padding-bottom: 1%; 
+    }
 }
- .top-p {margin-top: -20%;
+
+.top-p {margin-top: -20%;
 }
  
  .bottom-p {margin-bottom: 1%;
-}
- 
-#cakes p {line-height: 120%;
-			padding-bottom:2%;
-}
-
+    }
 /* end of cakes Styles*/
 
 /* deals Styles*/
@@ -181,21 +188,23 @@ p {font-size:1em; /*16pt/16pt*/
 				padding-right: 1.333333333333%; /* 20px/1500px */
 				padding-top: 1.333333333333%; /* 20px/1500px */
 				padding-bottom:.5%;
-}
 
-	#deals h1 {text-align:center;
+
+h1 {text-align:center;
 				padding-bottom:2%;
 }
 
-	#deals p {line-height: 120%;
+p {line-height: 120%;
 			padding-bottom:3%;
 			padding-top:3%;
-}
+    }
 
-	.border-deals { border-bottom:solid;
+} 
+	.border-deals {border-bottom:solid;
 			border-width:thin;
-			border-color:$deal-broader-color;								
-}
+			border-color:$deal-broader-color;
+        }
+       
 /* end of deals Styles*/
 
 /* small-nav styles*/
@@ -210,14 +219,15 @@ p {font-size:1em; /*16pt/16pt*/
 				background-color: $bookend-color;
 				margin-top:62%;
 				
-}
 
-	#footer p {color:$text-color;
+
+ p {color:$text-color;
 				padding-top:1%; 
 				margin-left: 2%; /* 30px/1500px */
 				text-align:center;
 				line-height: 120%;
 				font-size:1.125em; /* 18pt/16pt*/
+    }
 }
 /* end of footer Styles*/
 
@@ -232,12 +242,8 @@ p {font-size:1em; /*16pt/16pt*/
 		display:inline;
 }
 
-.fb-act, .tw-act, .pin-act { background:url(../images/GH-sprints.png) no-repeat;
-										
-}
-
-
-.fb-act { background-position: -30px -70px;
+.fb-act { background:url(../images/GH-sprints.png) no-repeat;
+            background-position: -30px -70px;
 			width:80px;
 			height:80px;
 			margin:2px;
@@ -245,7 +251,8 @@ p {font-size:1em; /*16pt/16pt*/
 			
 }
 
-.tw-act { background-position: -30px -185px;
+.tw-act {@extend .fb-act;
+            background-position: -30px -185px;
 			width:80px;
 			height:80px;
 			margin:2px;
@@ -253,7 +260,8 @@ p {font-size:1em; /*16pt/16pt*/
 				
 }
 
-.pin-act { background-position: -30px -320px;
+.pin-act { @extend .fb-act;
+            background-position: -30px -320px;
 			width:80px;
 			height:80px;
 			margin:2px;
