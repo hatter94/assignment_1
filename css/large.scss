@@ -74,7 +74,7 @@ img {float:left;
 			max-width:100%;
     }
     
-}    
+} //Nested    
 
 #header {background-color: $bookend-color;
 			padding-left: .0066666667%; /*10px/1500px*/
@@ -95,7 +95,7 @@ h2 {font-size: 1.5625em; /* 25pt/16pt */
 				padding-bottom:3%;
     }
     
-}
+} //Nested
 /*end of header Styles*/
 
 /*time styles*/
@@ -123,7 +123,7 @@ h2 {font-size: 1.5625em; /* 25pt/16pt */
 						padding-right:1.5%; /* 22.5px/1500px */
 						padding-left:1.5%; /* 22.5px/1500px */
     }  
-}    
+} //nested  
     .border {
             display:inline;
 			font-size:1.125em; /* 18pt/16pt */
@@ -159,7 +159,7 @@ p {line-height: 120%;
  h1 {text-align:center;
 			margin-bottom:3%;
     }
-}
+} //nested
 
 #cake-pic {padding-bottom: 20%;
 
@@ -170,7 +170,7 @@ img { float:left;
 				padding-right: 1%; /* 15px/1500px */
 				padding-bottom: 1%; 
     }
-}
+} //nested
 
 .top-p {margin-top: -20%;
 }
@@ -199,7 +199,7 @@ p {line-height: 120%;
 			padding-top:3%;
     }
 
-} 
+} //nested 
 	.border-deals {border-bottom:solid;
 			border-width:thin;
 			border-color:$deal-broader-color;
@@ -228,7 +228,7 @@ p {line-height: 120%;
 				line-height: 120%;
 				font-size:1.125em; /* 18pt/16pt*/
     }
-}
+} //nested
 /* end of footer Styles*/
 
 /*sprites styles*/
@@ -251,6 +251,7 @@ p {line-height: 120%;
 			
 }
 
+//@extend used
 .tw-act {@extend .fb-act;
             background-position: -30px -185px;
 			width:80px;
@@ -260,6 +261,7 @@ p {line-height: 120%;
 				
 }
 
+//@extend used
 .pin-act { @extend .fb-act;
             background-position: -30px -320px;
 			width:80px;
@@ -269,28 +271,21 @@ p {line-height: 120%;
 			
 }
 
-.fb-act:hover { background-position: -155px -68px;
+@mixin hover ($left:-155px, $right:-68px){
+    background-position: $left $right;
 			width:80px;
 			height:80px;
 			display:inline-block;
-			margin:2px;
-			
+			margin:2px;   
+    }
+
+.fb-act:hover {@include hover();
 }
 
-.tw-act:hover { background-position: -155px -185px;
-			width:80px;
-			height:80px;
-			display:inline-block;
-			margin:2px;
-			
+.tw-act:hover { @include hover(-155px, -185px);
 }
 
-.pin-act:hover { background-position: -155px -320px;
-			width:80px;
-			height:80px;
-			display:inline-block;
-			margin:2px;
-			
+.pin-act:hover { @include hover(-155px, -320px); 
 }
 
 /* end of sprites sytles*/
